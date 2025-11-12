@@ -15,6 +15,17 @@ python script/demo_ego_blur.py \
   --nms_iou_threshold 0.1 \
   --scale_factor_detections 1.1
 
+
+python script/testy.py \
+    --face_model_path /mnt/c/Users/balvin/Documents/Prosjekter/Tilgjengelighet/modeller/ego_blur_face/ego_blur_face.jit \
+    --lp_model_path /mnt/c/Users/balvin/Documents/Prosjekter/Tilgjengelighet/modeller/ego_blur_lp/ego_blur_lp.jit \
+    --input_folder_path /mnt/c/Users/balvin/Documents/Prosjekter/Tilgjengelighet/ra_img \
+    --output_folder_path /mnt/c/Users/balvin/Documents/Prosjekter/Tilgjengelighet/pred \
+    --lp_model_score_threshold 0.01 \
+    --face_model_score_threshold 0.01 \
+    --nms_iou_threshold 0.1 \
+    --scale_factor_detections 1.1
+
 python script/demo_ego_blur.py --lp_model_path /mnt/c/Users/balvin/Documents/Prosjekter/Tilgjengelighet/modeller/ego_blur_lp/ego_blur_lp.jit --input_image_path /mnt/c/Users/balvin/Documents/Prosjekter/Tilgjengelighet/img/3118_TettstedParkeringsområde_20250916144912.jpg --output_image_path /mnt/c/Users/balvin/Documents/Prosjekter/Tilgjengelighet/img/test_image_output_kun_lp.jpg  --lp_model_score_threshold 0.9 --face_model_score_threshold 0.2 --nms_iou_threshold 0.2 --scale_factor_detections 1
 
 
